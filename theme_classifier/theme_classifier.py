@@ -74,6 +74,7 @@ class ThemeClassifier():
         themes_df = pd.DataFrame(output_themes.tolist())
         df[themes_df.columns] = themes_df
 
+
         # Save Output
         if save_path is not None:
             df.to_csv(save_path, index=False)
